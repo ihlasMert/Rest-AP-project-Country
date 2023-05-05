@@ -4,9 +4,6 @@ import { Routes, Route } from "react-router-dom"
 import AllCountries from "./components/AllCountries/AllCountries"
 import CountryInfo from "./components/CountryInfo/CountryInfo"
 
-
-
-
 const App = () => {
   return (
     <>
@@ -17,8 +14,8 @@ const App = () => {
       </div>
       <div className='container'>
         <Routes>
-          <Route path="/" element={<AllCountries/>}></Route>
-          <Route path="/country/:countryName" element={<CountryInfo/>}></Route>
+          <Route path='/' element={<AllCountries />}></Route>
+          <Route path='/country/:countryName' element={<CountryInfo />}></Route>
         </Routes>
       </div>
     </>
