@@ -1,50 +1,64 @@
-
-/* =========== google fonts =========== */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
-
-/* ======== base style ======= */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #0a071a;
   list-style-type: none;
   text-decoration: none;
 }
-
-body,
-html {
-  background: #0a071a;
+.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsl(209, 23%, 22%);
 }
 
-section,
-footer {
-  padding: 70px 0px;
+.header > h5 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
-
-h1,
-h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  color: #f5b70a;
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 10px 10px;
+  font-size: 1.4rem;
 }
-
-p {
-  font-size: 1rem;
-  color: #c4c4c4;
-  line-height: 30px;
-  font-family: "Rubik", sans-serif;
+.country__button {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
-
-a {
-  text-decoration: none;
-  color: unset;
+.all__country__wrapper {
+  margin-top: 110px;
 }
-
-i {
+.country__cart {
+  width: 250px;
+  padding: 20px;
+  border-radius: 5px;
+  background: hsl(209, 23%, 22%);
   color: #fff;
+}
+.country__img {
+  height: 130px;
+  width: 100%;
+}
+.country__img > img {
+  width: 100%;
+  border-radius: 5px;
+}
+input {
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 40px;
+  background: hsl(209, 23%, 22%);
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+  font-size: 1rem;
 }
